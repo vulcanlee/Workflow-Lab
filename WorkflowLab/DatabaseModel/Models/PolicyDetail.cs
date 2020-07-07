@@ -9,6 +9,8 @@ namespace DatabaseModel.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int Id { get; set; }
         public string Name { get; set; }
+        public int Level { get; set; }
+        public int Manager { get; set; }
         public int PolicyId { get; set; }
         public Policy Policy { get; set; }
     }

@@ -10,6 +10,6 @@ namespace DatabaseModel.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int Id { get; set; }
         public string Account { get; set; }
-        //public List<Post> Posts { get; } = new List<Post>();
+        public List<Request> Requests { get; } = new List<Request>();
     }
 }
